@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #b2276b;
+  --on-primary-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn FD", sans-serif !important;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 16px;
+  position: relative;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1.2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-overlay {
+  flex: 1;
+  background-size: cover;
+  border-radius: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex: 0;
+  }
+}
+
+.product-logo {
+  width: 120px;
+}
+
+.content {
+  margin-top: 84px;
+  width: 300px;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin: 16px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.product-card {
+  margin-top: 24px;
+  padding: 8px 16px;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ورود</title>
+    <link rel="stylesheet" href="assets/style/font-face.css" />
+    <link rel="stylesheet" href="assets/style/styles.css" />
+    <link rel="stylesheet" href="assets/style/style-modal.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="main-container">
+        <div class="form-container">
+          <img id="logo" class="product-logo" alt="logo" />
+          <form id="login-form" class="login-form">
+            <h2>ورود</h2>
+            <label for="phone-number"
+              >لطفاً شماره تلفن همراه خود را وارد نمایید</label
+            >
+            <input
+              id="phone-number"
+              class="button phone-number ltr-input"
+              type="text"
+              placeholder="09xxxxxxxxx"
+              required
+            />
+            <button type="submit" class="button submit-btn">
+              دریافت کد از طریق پیامک
+            </button>
+            <button type="button" class="button outline-btn">
+              دریافت کد از طریق پیام صوتی
+            </button>
+            <p class="description">
+              * کاربر گرامی شما می‌توانید پس از تکمیل ثبت‌نام، از
+              <a class="other-product" href="#">سایر محصولات</a>
+              شرکت ارمغان راه طلائی نیز بدون نیاز به ثبت‌نام مجدد، استفاده
+              نمائید.
+            </p>
+          </form>
+        </div>
+      </div>
+      <div id="custom-banner" class="image-overlay"></div>
+      <div id="wraapper-modal">
+        <span class="close">&times;</span>
+        <p id="description-modal">عملیات با خطا مواجه شد</p>
+      </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

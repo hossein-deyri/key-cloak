@@ -1,0 +1,127 @@
+:root {
+  --primary-color: #b2276b;
+  --on-primary-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn FD", sans-serif !important;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #1f1f1f;
+  padding: 16px;
+  position: relative;
+}
+
+.image-overlay {
+  flex: 1;
+  background-size: cover;
+  border-radius: 16px;
+
+  @media screen and (max-width: 768px) {
+    flex: 0;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1.2;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-logo {
+  width: 120px;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px 16px;
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    padding: 0px 30px;
+  }
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.phone-number {
+  height: 56px;
+  background-color: #151518;
+  color: #fff;
+  padding-left: 10px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ltr-input {
+  text-align: left;
+  direction: ltr;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.submit-btn {
+  height: 56px;
+  background-color: var(--primary-color);
+  color: var(--on-primary-color);
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.outline-btn {
+  height: 56px;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  margin-top: 16px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+h2 {
+  margin-bottom: 40px;
+  margin-top: 60px;
+  width: 100%;
+  color: #fff;
+}
+
+label {
+  width: 100%;
+  color: #fff;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 22px;
+  color: #9898a0;
+  margin-top: 60px;
+
+  > .other-product {
+    color: #fff;
+  }
+}

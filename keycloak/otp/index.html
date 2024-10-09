@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ثبت کد</title>
+    <link rel="stylesheet" href="assets/style/font-face.css" />
+    <link rel="stylesheet" href="assets/style/styles.css" />
+    <link rel="stylesheet" href="assets/style/style-modal.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <div class="main-container">
+        <div class="form-container">
+          <img id="logo" class="product-logo" alt="logo" />
+          <form id="login-form" class="login-form">
+            <h2>کد تائید</h2>
+            <label
+              >لطفاً کد ارسالی به شماره <span id="phone-number"></span> را به
+              وارد نمایید.</label
+            >
+            <div class="container-verification" id="otp-container"></div>
+            <button id="submit-form" type="submit" class="button submit-btn">
+              تائید
+            </button>
+            <a id="edit-phone" class="underline-text">ویرایش شماره همراه</a>
+            <p id="timer-section" class="text">
+              <strong id="timer-duration"></strong>&nbsp; مانده تا دریافت مجدد
+              کد
+            </p>
+            <u class="text" id="get-code-again">دریافت مجدد کد تائید</u>
+          </form>
+        </div>
+      </div>
+      <div id="custom-banner" class="image-overlay"></div>
+    </div>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

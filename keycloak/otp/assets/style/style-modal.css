@@ -1,0 +1,51 @@
+#wraapper-modal {
+  display: none;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 1;
+  width: 300px;
+  height: 60px;
+  background-color: #e21622;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  animation: animatetop 0.4s;
+  padding: 5px;
+}
+
+@keyframes animatetop {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 5%;
+  }
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#description-modal {
+  font-size: 14px;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
